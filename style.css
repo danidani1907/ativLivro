@@ -139,18 +139,6 @@ img {
     width: 100px; /* Tamanho da imagem */
 }
 
-.personagens img {
-    width: 250px;
-    flex-direction: column-reverse;
-    border-radius: 100%;
-}
-
-.personagens {
-    background-color: rgba(240, 255, 255, 0.79);
-    width: 1000px;
-    border-radius: 100px;
-    padding: 50px;
-}
 
 .sinopse {
     background-color: rgba(240, 255, 255, 0.79);
@@ -164,6 +152,9 @@ a {
 
 .Avaliacao p {
     color: aqua;
+}
+.Avaliacao{
+    margin-top: 50%;
 }
 
 /* Responsividade */
@@ -231,4 +222,71 @@ a {
         max-width: 100%;
         width: 100%; /* Tornando as imagens responsivas */
     }
+}
+.item{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 170%;
+    background-color: #027373;
+    border-radius: 100px;
+    height: 400px;
+    padding: 50px;
+    overflow: hidden;
+   
+}
+
+.item.ativo{
+    display: block;
+}
+
+
+
+
+
+
+#anterior, #proximo{ 
+    position: absolute;
+    top: 220%;
+    transform: translatey(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #eee9;
+    border: 1px solid #eee9;
+    color: cadetblue;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+#anterior{
+    left: 30px;
+}
+
+#proximo{
+    right: 30px;
+}
+
+@keyframes mexer{
+    from{
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.item.ativo img.fruta{
+    animation: mexer 0.5s ease-in-out 1;
+}
+
+.item.ativo .titulo{
+    animation: mexer 0.5s ease-in-out 1;
+}
+
+.item img{
+    width: 250px;
+    margin-left: 30%;
+    border-radius: 100%;
 }
