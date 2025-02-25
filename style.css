@@ -229,9 +229,9 @@ a {
     height: 100%;
     position: absolute;
     top: 170%;
-    background-color: #027373;
+    background-color: #02737396;
     border-radius: 100px;
-    height: 400px;
+    height: 500px;
     padding: 50px;
     overflow: hidden;
    
@@ -289,4 +289,8 @@ a {
     width: 250px;
     margin-left: 30%;
     border-radius: 100%;
+}
+
+.item p{
+    color: #f9f9f9;
 }
